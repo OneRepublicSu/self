@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clickOpen
+        {
+            padding:5px  10px;
+            background-color: blueviolet;
+            display: inline-block;
+        }
+        .list
+        {
+            list-style: none;
+            display: inline-block;
+            background-color: blueviolet;
+            padding: 0px 20px;
+            display: none;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div id="clickOpen">点击展开</div>
+    <br>
+    <ul class="list">
+        <li class="item">目录1</li>
+        <li class="item">目录2</li>
+    </ul>
+ 
+    <script>
+        var clickbtn = document.getElementById('clickOpen');
+        var list = document.getElementsByClassName('list')[0];
+ 
+        var isopen = false;
+        clickbtn.addEventListener('click',function()
+        {
+            isopen = !isopen;
+            if(isopen)
+            {
+                clickbtn.innerHTML = '点击隐藏';
+                list.style.display = 'inline-block';
+            }
+            else 
+            {
+                clickbtn.innerHTML = '点击展开';
+                list.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+</html>
+————————————————
+版权声明：本文为CSDN博主「A-Select  °」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_45959504/article/details/104299322
