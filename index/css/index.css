@@ -18,6 +18,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     height: 100%;
+    border-left: 100px solid #020202 ;
 }
 
 /* 顶部和底部通用 */
@@ -101,11 +102,10 @@ body {
 /* 花01 */
 .main .dec .hua01 {
     position: absolute;
-    left: -350%;
+    left: -305%;
     top: 50px;
     width: 140%;
 }
-
 /* 花02  */
 .main .dec .hua02 {
     position: absolute;
@@ -129,7 +129,7 @@ body {
 /* img 通用代码 */
 .main .hua03 img,
 .main .hua02 img,
-.main .hua01 img {
+ .main .hua01 img {
     width: 100%;
 }
 
