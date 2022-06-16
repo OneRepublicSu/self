@@ -9,7 +9,7 @@ clickbtn.addEventListener('click',function()
     isopen = !isopen;
     if(isopen)
     {
-        list.style.opacity = '1';
+        list.style.display = 'block';
         hua03.style.opacity = '0';
         clickbtn.style.color='#4f553c';
         clickbtn02.style.color='transparent';
@@ -19,7 +19,7 @@ clickbtn.addEventListener('click',function()
     }
     else 
     {
-        list.style.opacity = '0';
+        list.style.display = 'none';
         hua03.style.opacity = '1';
         clickbtn.style.color='white';
         clickbtn02.style.color='white';
@@ -42,7 +42,7 @@ clickbtn02.addEventListener('click',function()
     isopen = !isopen;
     if(isopen)
     {
-        list02.style.opacity = '1';
+        list02.style.display = 'block';
         hua03.style.opacity = '0';
         clickbtn02.style.color='#4f553c'
         clickbtn.style.color='transparent';
@@ -52,7 +52,7 @@ clickbtn02.addEventListener('click',function()
     }
     else 
     {
-        list02.style.opacity = '0';
+        list02.style.display = 'none';
         hua03.style.opacity = '1';
         clickbtn02.style.color='white'
         clickbtn.style.color='white';
@@ -73,7 +73,7 @@ clickbtn03.addEventListener('click',function()
     isopen = !isopen;
     if(isopen)
     {
-        list03.style.opacity = '1';
+        list03.style.display = 'block';
         hua03.style.opacity = '0';
         clickbtn03.style.color='#4f553c'
         clickbtn.style.color='transparent';
@@ -83,7 +83,7 @@ clickbtn03.addEventListener('click',function()
     }
     else 
     {
-        list03.style.opacity = '0';
+        list03.style.display = 'none';
         hua03.style.opacity = '1';
         clickbtn03.style.color='white'
         clickbtn.style.color='white';
@@ -104,7 +104,7 @@ clickbtn04.addEventListener('click',function()
     isopen = !isopen;
     if(isopen)
     {
-        list04.style.opacity = '1';
+        list04.style.display = 'block';
         hua03.style.opacity = '0';
         clickbtn04.style.color='#4f553c'
         clickbtn.style.color='transparent';
@@ -114,7 +114,7 @@ clickbtn04.addEventListener('click',function()
     }
     else 
     {
-        list04.style.opacity = '0';
+        list04.style.display = 'none';
         hua03.style.opacity = '1';
         clickbtn04.style.color='white'
         clickbtn.style.color='white';
@@ -135,7 +135,7 @@ clickbtn05.addEventListener('click',function()
     isopen = !isopen;
     if(isopen)
     {
-        list05.style.opacity = '1';
+        list05.style.display = 'block';
         hua03.style.opacity = '0';
         clickbtn05.style.color='#4f553c'
         clickbtn.style.color='transparent';
@@ -145,7 +145,7 @@ clickbtn05.addEventListener('click',function()
     }
     else 
     {
-        list05.style.opacity = '0';
+        list05.style.display = 'none';
         hua03.style.opacity = '1';
         clickbtn05.style.color='white'
         clickbtn.style.color='white';

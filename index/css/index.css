@@ -1,3 +1,4 @@
+
 html,
 body {
     width: 100%;
@@ -9,8 +10,8 @@ body {
     background-size: cover;
     position: relative;
     background-attachment: fixed;
-
 }
+
 
 /* 版心 */
 .w {
@@ -82,7 +83,6 @@ body {
 
 .main .dec ul li {
     height: 80px;
-
 }
 
 .main .dec ul li img {
@@ -145,26 +145,23 @@ body {
     cursor: pointer;
 }
 
-.main .dec ul li:hover span:first-child {
+.main .dec .dec-main li:hover span:first-child {
     font-size: 25px;
 }
 
-.main .dec ul li:hover span:last-child {
+.main .dec .dec-main li:hover span:last-child {
     font-size: 14px;
 }
 
 .list {
+    display: none;
     position: absolute;
     left: 110%;
     top: 10%;
     width: 150%;
     height: 80%;
-    opacity: 0;
     transition: all 1s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
 
 }
 .list::after{
@@ -179,14 +176,27 @@ body {
     font-style: italic;
 }
 
-.list ul {
+.main .dec .list ul {
+    padding-top: 50px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.list ul li{
-    height: 80px;
+.main .dec .list ul li{
+    height: 80px ;
+    line-height: 1.5em;
 }
 
-.list ul li span {
+
+.main .dec .list ul li  span:first-child {
     width: 200%;
     font-size: 14px;
+    color: white;
+}
+.main .dec .list ul li  span:last-child {
+    width: 200%;
+    font-size: 12px ;
+    color: white;
 }

@@ -1,0 +1,23 @@
+{
+  "id": "3468177",
+  "name": "武汉警察博物馆",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7749544",
+      "name": "16gl-quoteRight",
+      "font_class": "16gl-quoteRight",
+      "unicode": "eb8a",
+      "unicode_decimal": 60298
+    },
+    {
+      "icon_id": "7749546",
+      "name": "16gl-quoteLeft",
+      "font_class": "16gl-quoteLeft",
+      "unicode": "eb8b",
+      "unicode_decimal": 60299
+    }
+  ]
+}
