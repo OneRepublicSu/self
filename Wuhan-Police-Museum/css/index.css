@@ -258,7 +258,7 @@ body {
     height: 315px;
     padding: 20px;
     transform: rotateY(180deg);
-    backface-visibility: hidden !important;
+    backface-visibility: hidden ;
     background-color: #c1acae;
 
 }
@@ -466,6 +466,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .fix img {
