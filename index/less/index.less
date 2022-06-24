@@ -1,0 +1,67 @@
+@import url(./base.less);
+@import url(./normalize.less);
+
+@keyframes move-t {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+.w{
+    width: 1200px;
+    margin: 100px auto;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    .picwall{
+        width: 50%;
+        height: 600px;
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    }
+    .catelog{
+        width: 47%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            align-self: end;
+            position: relative;
+            img{
+                width: 80px;
+                position: absolute;
+                left: -122px;
+                top: 47px;
+            }
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                font-weight: 700;
+                font-size: 18px;
+                a{
+                    width: 100%;
+                    height: 18px;
+                    color: #95ca00;
+                }
+                span{
+                    padding: 4px;
+                    color: #fff;
+                    background-color: #95ca00;
+                }
+            }
+        }
+    }
+}
