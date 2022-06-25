@@ -1,0 +1,116 @@
+@import url(./base.less);
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 300px;
+    
+      width: 100%;
+  
+    background-color:#c1bfbd;
+    transition: all 0.8s;
+
+    h1 {
+        text-align: center;
+        letter-spacing: 50px;
+        margin-top: 50px;
+        color: #FFF;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 75px;
+        margin-left: -50px;
+        font-size: 12px;
+        color: #FFF;
+    }
+
+}
+
+.w {
+
+    .block {
+        margin-top: 370px;
+        width:(660px * 4) ;
+        height: 300px;
+        display: flex;
+
+        .all{
+            margin-right: 120px;
+            width: 540px;
+            height: 220px;
+            display: flex;
+            .pic01 {
+                background: url(../img/01.jpg) no-repeat center center;
+            }
+            .pic02 {
+                background: url(../img/02.jpg) no-repeat center center;
+            }
+            .pic03 {
+                background: url(../img/03.jpg) no-repeat center center;
+            }
+            .pic04 {
+                background: url(../img/04.jpg) no-repeat center center;
+            }
+    
+    
+            .pic {
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                background-size: cover;
+                transition: all 0.8s;
+                &:hover {
+                    box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157),
+                        0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28),
+                        0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
+                }
+        
+            }
+            .info{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 10px;
+                h4{
+                    margin:10px 0;
+                    
+                }
+                p{
+                    font-size: 12px;
+                    color: #6d6b65;
+                }
+            }
+            
+        }
+
+       
+    }
+}
+
+.back{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 12px;
+   
+    a{
+        p{
+            margin: 7px 0;
+        }
+        color: #6d6b65;
+        &:hover{
+            color: #000;
+        }
+    }
+}
+
