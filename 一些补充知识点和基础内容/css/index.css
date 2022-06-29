@@ -40,56 +40,57 @@ a {
   margin: 0 auto;
   padding-top: 100px;
 }
-.aside .pic-top {
+.main > div {
+  padding: 0 100px;
+}
+.main .article {
+  display: flex;
+}
+.main .article .aside .pic-top {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  margin: 20px auto;
+  margin: 100px 50px;
   animation: move-t 1s ease-in-out;
 }
-.aside .top01 {
+.main .article .aside .top01 {
   background: url(../img/01.jpg) no-repeat center top;
   background-size: cover;
 }
-.main > div {
-  padding: 0  100px;
+.main .article .aside .top02 {
+  background: url(../img/02.jpeg) no-repeat center top;
+  background-size: cover;
 }
-.main .pic {
-  height: 200px;
-  padding: 10px;
-  animation: move-t 1.2s ease-in-out;
-}
-.main .section {
-  margin-top: 40px;
+.main .article .section {
+  padding: 50px;
+  flex: 1;
   animation: move-t 1s ease-in-out;
   margin-bottom: 100px;
   transition: all 0.8s;
 }
-.main .section h2 {
+.main .article .section h2 {
   font-weight: 400;
   animation: move-t 0.8s ease-in-out;
   text-align: center;
-  padding-top: 30px;
+  padding: 30px;
 }
-.main .section p {
+.main .article .section p {
   margin-top: 20px;
 }
-.main .section p span {
+.main .article .section p span {
   font-weight: 700;
 }
-.main .section:hover {
-  box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
-}
-.main pre {
-  padding-top: 20px;
+.main .article .section pre {
   margin-top: 20px;
-  text-align: left;
+}
+.main .article .section:hover {
+  box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 .footer {
   height: 50px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   text-align: center;
 }
 .footer a i {

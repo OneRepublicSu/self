@@ -157,7 +157,7 @@ a {
   color: #999;
 }
 .rowBody02 {
-  animation: move-t 0.8s;
+  animation: move-t 0.5s;
   margin: 0 auto;
   margin-bottom: 200px;
   border-radius: 4px;
