@@ -7,34 +7,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <link rel="stylesheet" href="./index/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index/css/index.css">
-    <title>OneRepublicSu</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <title>something beauty</title>
 
 </head>
 
 <body>
-  
+
+    <!-- bootstrap 版心 -->
     <div class="container">
+
+        <!-- 标题行 -->
         <div class="row title">
             <p class="landIn">Css+JavaScript动态归档</p>
             <p>
                 部分需要借助bootstrap/JavaScript来完成
             </p>
-
         </div>
+
+        <!-- 第一行 -->
         <div class="row rowBody">
-            <div class="col-lg-4  col-xs-12 left-one">
-                <div class="row  box01 ">
-                    <div class="pic01">
-                        <a href="#">
-                            <img src="./index/img/ver2.0/01.jpg" alt="">
-                        </a>
-                    </div>
-                    <h4>白光划过效果</h4>
+            <!-- 栅格 -->
+            <div class="col-lg-4  col-xs-12">
+                <!-- 白光划过效果 -->
+                <div class="pic01 picz">
+                    <a href="#">
+                        <img src="./index/img/ver2.0/01.jpg" alt="">
+                    </a>
                 </div>
+                <h4>白光划过效果</h4>
             </div>
-            <div class="col-lg-4  col-xs-12 left-two">
-                <div class="row  box02 ">
-                    <div class="pic02">
+
+            <!-- 栅格 -->
+            <div class="col-lg-4  col-xs-12">
+                <!-- 卡片翻面 -->
+                <div class=" box02 ">
+                    <div class="pic02 picz">
                         <a href="#">
                             <img src="./index/img/ver2.0/02.jpg" alt="">
                         </a>
@@ -45,9 +53,10 @@
                     <h4>卡片翻面效果</h4>
                 </div>
             </div>
-            <div class="col-lg-4  col-xs-12 right-one">
-                <div class="row  box04 ">
-                    <div class="pic04">
+            <!-- 栅格-->
+            <div class="col-lg-4  col-xs-12">
+                <div class=" box04 ">
+                    <div class="pic04 picz">
                         <img src="./index/img/ver2.0/04.jpg" alt="" class="pic-hd">
                         <div class="info2">
                             In me the tiger sniffs the rose.
@@ -57,19 +66,23 @@
                 </div>
             </div>
         </div>
+
+        <!-- 标题行 -->
         <div class="row rowBody02">
             <h4>TRANSFORM</h4>
             <span>辅助实现</span>
             <p>
                 伪元素/渐变/preserve-3d/过渡/backface-visibility
             </p>
-
         </div>
 
+        <!-- 第二行特效 -->
         <div class="row rowBody03">
-            <div class="col-lg-4  col-xs-12 left-one">
-                <div class="row  box01 ">
-                    <div class="pic01 ">
+            <!-- 栅格 -->
+            <div class="col-lg-4  col-xs-12">
+                <!-- 毛玻璃 -->
+                <div class=" box01 ">
+                    <div class="pic01 picz">
                         <div class="frosted-glass ">
 
                         </div>
@@ -77,11 +90,12 @@
                     <h4>毛玻璃</h4>
                 </div>
             </div>
-           
-         
-            <div class="col-lg-4  col-xs-12 right-two">
-                <div class="row  box03 ">
-                    <div class="pic03">
+
+            <!-- 栅格 -->
+            <div class="col-lg-4  col-xs-12">
+                <!-- 放大 -->
+                <div class="box03 ">
+                    <div class="pic03 picz">
                         <a href="#">
                             <img src="./index/img/ver2.0/07.jpg" alt="">
                         </a>
@@ -89,51 +103,155 @@
                     <h4>鼠标悬浮放大</h4>
                 </div>
             </div>
- 
-            <div class="col-lg-3 col-md-6 col-xs-12 left-two button">
-                <div class="row  box02 ">
-                    <div class="pic02">
-                        <a href="#">
-                            <img src="./index/img/ver2.0/06.jpg" alt="">
-                        </a>
-        
-                    </div>
-                    <h4>追随鼠标(有bug)</h4>
+
+            <!-- 栅格 -->
+            <div class="col-lg-4 col-xs-12  button">
+                <div class=" picz">
+                    <a href="#">
+                        <img src="./index/img/ver2.0/06.jpg" alt="">
+                    </a>
                 </div>
-        
-                </div>
+                <h4>追随鼠标(有bug)</h4>
+            </div>
         </div>
-        <div class="row rowBody02 container">
+
+        <div class="row rowBody02 ">
             <h4>DOCUMENT</h4>
             <span>辅助实现</span>
-
-         
             <p>
                 backdrop-filter/offsetLeft/阴影/监听/透明度
             </p>
-
-            <!-- <div class="button"></div> -->
         </div>
 
-        <div class="row rowBody02 container">
-          
-         
-            <p>
-                <a class="back" href="../index.html"><span>点击此处返回上层</span>
-                <span>click here to back</span></a>
-              
-              
+        <!-- 轮播图 -->
+        <div class="row rowBody04">
+            <div class="banner-box">
+                <div class="banner">
+                </div>
+            </div>
+
+
+            <p id="describe">
+                <i class="iconfont icon-xiangzuojiantou" id="leftbtn"></i>
+                <span> "天下万物的来和去，都有他的时间。"</span>
+                <i class="iconfont icon-xiangyoujiantou" id="rightbtn"></i>
             </p>
-
-    
+            <ul class="indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
-      
+        <!-- 标题行 -->
+        <div class="row rowBody02">
+            <h4>ADDEVENTLISTENER</h4>
+            <span>辅助实现</span>
+            <p>
+                计时器/鼠标事件/function/伪数组/querySelector/循环
+            </p>
+        </div>
+
+        <!-- 全选复选 -->
+        <div class="row rowBody05">
+            <table>
+                <!-- 表头 -->
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" id="checkedAll">
+                    </th>
+                    <th>
+                        What needs to be done today
+                        <br>
+                        <span>今日必须完成的事件:</span>
+                    </th>
+                </tr>
+                <!-- 表格内容 -->
+                <tr>
+                    <td> <input type="checkbox" name="" class="checkedList"></td>
+                    <td>
+                        保持开心快乐和热忱
+                        <br>
+                        <span>Keep happy and enthusiastic</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox" name="" class="checkedList"></td>
+                    <td>
+                        保持足够的睡眠和进食
+                        <br>
+                        <span>
+                            Get enough sleep and eat
+                        </span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- 标题行 -->
+        <div class="row rowBody02">
+            <h4>CHECKBOX</h4>
+            <span>辅助实现</span>
+            <p>
+                click事件/Length/全等运算符/addEventListener
+            </p>
+        </div>
+
+        <!-- 手风琴 -->
+        <div class="row rowBody06">
+            <ul id="accordion">
+                <li>
+                    <div class="accordion01"></div>
+                </li>
+                <li>
+                    <div class="accordion02"></div>
+                </li>
+                <li>
+                    <div class="accordion03"></div>
+                </li>
+                <li>
+                    <div class="accordion04"></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 标题行 -->
+        <div class="row rowBody02">
+            <h4>ACCORDION</h4>
+            <span>辅助实现</span>
+            <p>
+                style/光标经过/光标离开/transition
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- 版心结束 -->
+
+    <!-- 返回 -->
+    <div class="footer">
+        <a href="../index.html">
+            <i class="iconfont icon-a-zujiantianchong_huaban1fuben13"></i>
+            <br>
+            <span>Click Here To Back</span>
+            <br>
+            <span>点击此处返回</span>
+        </a>
+
+
     </div>
 
-
-
-  <script src="./index/js/index.js"></script>
+    <script src="./index/js/index.js"></script>
     <script src="./index/js/jquery.js"></script>
     <script src="./index/js/bootstrap.min.js"></script>
 </body>

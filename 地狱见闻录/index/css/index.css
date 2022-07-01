@@ -58,7 +58,7 @@ a {
 }
 .w .block {
   margin-top: 370px;
-  width: 2640px;
+  width: 1980px;
   height: 300px;
   display: flex;
 }
@@ -76,9 +76,6 @@ a {
 }
 .w .block .all .pic03 {
   background: url(../img/03.jpg) no-repeat center center;
-}
-.w .block .all .pic04 {
-  background: url(../img/04.jpg) no-repeat center center;
 }
 .w .block .all .pic {
   width: 200px;
