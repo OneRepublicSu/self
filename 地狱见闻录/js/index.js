@@ -16,4 +16,10 @@ document.querySelector('#Pic03').addEventListener('click',function(){
 })
 
 
+document.querySelector('#Pic04').addEventListener('click',function(){
+    document.getElementById('Top').style.background = '#d2cec2'
+})
+
+
+
 
