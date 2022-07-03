@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16470609",
+      "name": "附件/回形针",
+      "font_class": "fujian",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "18176431",
+      "name": "收起",
+      "font_class": "mid-full",
+      "unicode": "ea82",
+      "unicode_decimal": 60034
+    },
+    {
       "icon_id": "844607",
       "name": "勾5",
       "font_class": "gou5",

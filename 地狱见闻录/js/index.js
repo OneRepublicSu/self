@@ -20,6 +20,10 @@ document.querySelector('#Pic04').addEventListener('click',function(){
     document.getElementById('Top').style.background = '#d2cec2'
 })
 
+document.querySelector('#Pic05').addEventListener('click',function(){
+    document.getElementById('Top').style.background = '#97b1ca'
+})
+
 
 
 

@@ -23,6 +23,81 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+// 返回按钮
+
+.footer {
+    height: 200px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+
+    a {
+        display: block;
+        margin-bottom: 30px;
+        text-decoration: none;
+
+        i {
+            font-size: 20px;
+            color: #1e1e1e;
+        }
+
+        span {
+            color: #1e1e1e;
+            font-size: 10px;
+
+        }
+
+        &:hover span,
+        &:hover i {
+            color: #ccc;
+        }
+
+    }
+}
+
+// 顶部导航
+.top {
+    width: 100%;
+    height: 200px;
+    background-color: #cccccc;
+    position: fixed;
+    top: -200px;
+    left: 0;
+    transition: all 1S;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            padding: 20px 40px;
+            color: #727473;
+        }
+
+        li.active {
+            color: #fff;
+        }
+    }
+
+    a {
+        text-align: center;
+        font-size: 10px;
+        color: #727473;
+        text-decoration: none;
+
+    }
+}
+
 // 总标题行
 .title {
     animation: move-t 0.3s;
@@ -360,36 +435,6 @@
 
 }
 
-// 返回按钮
-.footer {
-    height: 50px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    text-align: center;
-
-    a {
-        text-decoration: none;
-
-        i {
-            font-size: 20px;
-            color: #1e1e1e;
-        }
-
-        span {
-            color: #1e1e1e;
-            font-size: 10px;
-
-        }
-
-        &:hover span,
-        &:hover i {
-            color: #ccc;
-        }
-
-    }
-}
-
 // 列表全选复选
 .rowBody05 {
     margin: 50px auto;
@@ -478,6 +523,7 @@
     margin: 50px auto;
     height: 230px;
     width: 1000px;
+
     ul {
         display: flex;
 

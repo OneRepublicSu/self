@@ -35,6 +35,64 @@ a {
     transform: translateY(0);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+.footer {
+  height: 200px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-align: center;
+}
+.footer a {
+  display: block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.footer a i {
+  font-size: 20px;
+  color: #1e1e1e;
+}
+.footer a span {
+  color: #1e1e1e;
+  font-size: 10px;
+}
+.footer a:hover span,
+.footer a:hover i {
+  color: #ccc;
+}
+.top {
+  width: 100%;
+  height: 200px ;
+  background-color: #cccccc;
+  position: fixed;
+  top: -200px;
+  left: 0;
+  transition: all 1S ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top ul li {
+  padding: 20px 40px;
+  color: #727473;
+}
+.top ul li.active {
+  color: #fff;
+}
+.top a {
+  text-align: center;
+  font-size: 10px;
+  color: #727473;
+  text-decoration: none;
+}
 .w {
   width: 1200px;
   margin: 0 auto;
@@ -85,23 +143,4 @@ a {
 }
 .main .article .section:hover {
   box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
-}
-.footer {
-  height: 50px;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  text-align: center;
-}
-.footer a i {
-  font-size: 20px;
-  color: #1e1e1e;
-}
-.footer a span {
-  color: #1e1e1e;
-  font-size: 10px;
-}
-.footer a:hover span,
-.footer a:hover i {
-  color: #ccc;
 }
