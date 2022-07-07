@@ -328,28 +328,28 @@ html {
     }
 
     // 追随鼠标
-    .button {
+    .mouse {
         position: relative;
         appearance: none;
-        height: 240px;
         overflow: hidden;
         margin: 0 auto;
-
-        &::before {
-            --size: 0;
-            content: '';
+        overflow: hidden;
+        background-color: aqua;
+        .mask{
             position: absolute;
-            left: var(--x);
-            top: var(--y);
-            width: var(--size);
-            height: var(--size);
-            background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.6), transparent);
-            transform: translate(-50%, -50%);
-            transition: width .2s ease, height .2s ease;
+            z-index: 4;
+            display: none;
+            top: 0;
+            left: 0;
+            width:400px;
+            height: 400px;
+            background: radial-gradient(circle closest-side, white, transparent);
         }
-
-        &:hover::before {
-            --size: 600px;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%; 
         }
 
     }

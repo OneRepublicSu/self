@@ -261,27 +261,28 @@ html {
   box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
-.rowBody03 .button {
+.rowBody03 .mouse {
   position: relative;
   appearance: none;
-  height: 240px;
-  overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
+  background-color: aqua;
 }
-.rowBody03 .button::before {
-  --size: 0;
-  content: '';
+.rowBody03 .mouse .mask {
   position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.6), transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
+  z-index: 4;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle closest-side, white, transparent);
 }
-.rowBody03 .button:hover::before {
-  --size: 600px;
+.rowBody03 .mouse img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .rowBody03 .box03 .pic03 {
   overflow: hidden;

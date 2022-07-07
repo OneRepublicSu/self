@@ -13,12 +13,22 @@ landInTexts.forEach(landInText => {
 });
 
 // 鼠标追随
-document.querySelector('.button').onmousemove = (e) => {
-    const x = e.pageX - e.target.offsetLeft
-    const y = e.pageY - e.target.offsetTop
-    e.target.style.setProperty('--x', `${x}px`)
-    e.target.style.setProperty('--y', `${y}px`)
-}
+const mask = document.querySelector('.mask')
+const mouse = document.querySelector('.mouse')
+mouse.addEventListener('mouseover', function () {
+    mask.style.display = 'block'
+})
+mouse.addEventListener('mouseleave', function () {
+    mask.style.display = 'none'
+})
+mouse.addEventListener('mousemove', function (e) {
+    const x = e.pageX - mouse.getBoundingClientRect().x 
+    const y = e.pageY - mouse.getBoundingClientRect().y - document.documentElement.scrollTop 
+    let maskX = x - mask.offsetWidth / 2
+    let maskY = y - mask.offsetHeight / 2
+    mask.style.left = `${maskX}px`
+    mask.style.top = `${maskY}px`
+})
 
 // 轮播图
 const sliderData = [
@@ -34,7 +44,7 @@ const lis = document.querySelectorAll('.indicator li')
 const cont = document.querySelector('#describe span')
 const rightbtn = document.querySelector('#rightbtn')
 const leftbtn = document.querySelector('#leftbtn')
-const bannerBox =document.querySelector('.banner-box')
+const bannerBox = document.querySelector('.banner-box')
 let i = 0
 
 function rander(i) {
@@ -68,23 +78,23 @@ leftbtn.addEventListener('click', function () {
 })
 
 // 指示器
-function getChange(j){
-    lis[j].addEventListener('click',function(){
+function getChange(j) {
+    lis[j].addEventListener('click', function () {
         rander(j)
         // 被赋予的值需要放在后面
-        i =  j      
+        i = j
     })
 }
 
-for(j=0 ; j<sliderData.length ; j++){
+for (j = 0; j < sliderData.length; j++) {
     getChange(j)
 }
 
 // 悬停
-bannerBox.addEventListener('mouseenter',function(){
+bannerBox.addEventListener('mouseenter', function () {
     clearInterval(id)
 })
-bannerBox.addEventListener('mouseleave',function(){
+bannerBox.addEventListener('mouseleave', function () {
     id = setInterval(function () {
         rightbtn.click()
     }, 2500)
@@ -96,13 +106,13 @@ const checkedAll = document.querySelector('#checkedAll')
 const checkedLists = document.querySelectorAll('.checkedList')
 
 
-checkedAll.addEventListener('click', function(){
-     checkedLists[0].checked =checkedAll.checked 
-     checkedLists[1].checked =checkedAll.checked 
+checkedAll.addEventListener('click', function () {
+    checkedLists[0].checked = checkedAll.checked
+    checkedLists[1].checked = checkedAll.checked
 })
 
-for(let m = 0 ; m <2 ; m++){
-    checkedLists[m].addEventListener('click',function(){
+for (let m = 0; m < 2; m++) {
+    checkedLists[m].addEventListener('click', function () {
         const checkedListLength = document.querySelectorAll('.checkedList:checked').length
         // 被赋予的值需要放在后面
         checkedAll.checked = checkedListLength === checkedLists.length
@@ -114,15 +124,15 @@ for(let m = 0 ; m <2 ; m++){
 const accordion = document.querySelector('#accordion')
 const accs = document.querySelectorAll('#accordion li')
 
-for(let q = 0 ; q < accs.length ; q++){
-    accs[q].addEventListener('mouseenter',function(){
-        for(let b = 0 ; b < accs.length ; b++){
+for (let q = 0; q < accs.length; q++) {
+    accs[q].addEventListener('mouseenter', function () {
+        for (let b = 0; b < accs.length; b++) {
             accs[b].style.width = '100px'
         }
         accs[q].style.width = '700px'
     })
-    accs[q].addEventListener('mouseleave',function(){
-        for(let b = 0 ; b < accs.length ; b++){
+    accs[q].addEventListener('mouseleave', function () {
+        for (let b = 0; b < accs.length; b++) {
             accs[b].style.width = '250px'
         }
     })
@@ -135,13 +145,13 @@ const ttop = document.querySelector('.top')
 const closed = document.querySelector('#closed')
 
 
-nav.addEventListener('click',function(e){
+nav.addEventListener('click', function (e) {
     ttop.style.top = 0
     e.preventDefault()
 
 })
 
-closed.addEventListener('click',function(e){
+closed.addEventListener('click', function (e) {
     ttop.style.top = '-200px'
     const n = document.querySelector('.top ul li.active')
     n && n.classList.remove('active')
@@ -150,10 +160,10 @@ closed.addEventListener('click',function(e){
 })
 
 const lism = document.querySelector('.top ul')
-lism.addEventListener('click',function(e){
+lism.addEventListener('click', function (e) {
     const n = document.querySelector('.top ul li.active')
     n && n.classList.remove('active')
-    if(e.target.tagName === 'LI'){
+    if (e.target.tagName === 'LI') {
         e.target.classList.add('active')
         const rname = e.target.dataset.name
         const rtop = document.querySelector(`.${rname}`).offsetTop
