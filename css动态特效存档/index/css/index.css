@@ -84,14 +84,17 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 120;
 }
 .top ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 .top ul li {
-  padding: 20px 40px;
+  white-space: nowrap;
+  padding: 5px 40px;
   color: #727473;
 }
 .top ul li.active {
@@ -437,4 +440,103 @@ html {
 }
 .rowBody06 .accordion04 {
   background: url(../img/ver2.0/accordion04.jpg) center;
+}
+.rowBody07 {
+  margin: 50px auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+}
+.rowBody07 .magnifier {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+  background: url(../img/ver2.0/magnifier-01.jpg) center / cover;
+}
+.rowBody07 .magnifier .magLarge {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 400px;
+  display: none;
+  background-size: 800px 800px !important;
+}
+.rowBody07 .magnifier .mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 56;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.rowBody07 .magnifier .middle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.rowBody07 .magnifier .middle img {
+  width: 100%;
+}
+.rowBody07 .aside ul {
+  width: 80px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rowBody07 .aside ul li {
+  width: 80px;
+  height: 80px;
+  transform: all 1s;
+}
+.rowBody07 .aside ul li img {
+  width: 100%;
+}
+.rowBody07 .aside ul .active {
+  transition: all 0.8s;
+  box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.rowBody08 {
+  margin: 50px auto;
+}
+.rowBody08 ul {
+  display: flex;
+  justify-content: center;
+}
+.rowBody08 ul a {
+  display: block;
+  padding: 10px;
+  color: #303030;
+  text-decoration: none;
+}
+.rowBody08 ul a:hover {
+  color: #727473;
+}
+.rowBody08 ul .active {
+  color: #727473;
+}
+.rowBody08 .contentmain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.rowBody08 .contentmain .filtermain {
+  width: 160px;
+  margin: 50px  ;
+}
+.rowBody08 .contentmain .filtermain .filterpic img {
+  width: 100%;
+}
+.rowBody08 .contentmain .filtermain h4 {
+  font-size: 10px;
+}
+.rowBody08 .contentmain .filtermain p {
+  font-size: 14px;
+  height: 50px;
+  margin: 10px 0;
 }

@@ -24,6 +24,15 @@ document.querySelector('#Pic05').addEventListener('click',function(){
     document.getElementById('Top').style.background = '#97b1ca'
 })
 
+document.querySelector('#Pic06').addEventListener('click',function(){
+    document.getElementById('Top').style.background = '#956643'
+})
+
+document.querySelector('#Pic07').addEventListener('click',function(){
+    document.getElementById('Top').style.background = '#606d74'
+})
+
+
 
 
 
