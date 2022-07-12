@@ -32,3 +32,18 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.clearfix::after {
+  content: '';
+  /* 因为伪元素插入的标签属于行内元素,需要转换为块级 */
+  display: block;
+  clear: both;
+  /* 兼容性的作用 */
+  height: 0;
+  visibility: hidden;
+}
+
+/* 兼容ie6 ie7 */
+/*ie浏览器 */
+.clearfix {
+  *zoom: 1;
+}

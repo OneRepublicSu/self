@@ -443,6 +443,7 @@ html {
 }
 .rowBody07 {
   margin: 50px auto;
+  width: 1000px;
   height: 500px;
   display: flex;
   justify-content: center;
