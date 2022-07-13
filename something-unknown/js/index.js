@@ -276,7 +276,6 @@ document.querySelector('.todo').addEventListener('click', (e) => {
 })
 
 // 说明书
-
 document.querySelector('.instructions01').addEventListener('click',function(e){
     e.preventDefault()
     document.querySelector('.instructions-01').style.display = 'block'
